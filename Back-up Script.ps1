@@ -1,4 +1,4 @@
-\f0\fs24 \cf0 \
+
 # Prompt for user name\
 $name = Read-Host "Hello! What's your name?"\
 \
@@ -26,5 +26,3 @@ $body = "Hello, $name! Your backup is completed: $backupFile"\
 \'a0\
 # Send email\
 Send-MailMessage -SmtpServer $smtpServer -From $from -To $to -Subject $subject -Body $body
-\fs32 \
-}
